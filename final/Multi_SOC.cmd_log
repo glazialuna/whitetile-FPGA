@@ -1,0 +1,483 @@
+xst -intstyle ise -ifn "C:/scr/Exp09_MultiCPU/Multi_SOC.xst" -ofn "C:/scr/Exp09_MultiCPU/Multi_SOC.syr" 
+xst -intstyle ise -ifn "C:/scr/Exp09_MultiCPU/Multi_SOC.xst" -ofn "C:/scr/Exp09_MultiCPU/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/TopSOC.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/TopSOC.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/scr/Exp09_MultiCPU/Multi_SOC.xst" -ofn "C:/scr/Exp09_MultiCPU/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/scr/Exp09_MultiCPU2/Multi_SOC.xst" -ofn "C:/scr/Exp09_MultiCPU2/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/scr/Exp10_FramMDP/Multi_SOC.xst" -ofn "C:/scr/Exp10_FramMDP/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/scr/Exp10_FramMDP/Multi_SOC.xst" -ofn "C:/scr/Exp10_FramMDP/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/scr/Exp10_FramMDP/Multi_SOC.xst" -ofn "C:/scr/Exp10_FramMDP/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/scr/Exp10_FramMDP/Multi_SOC.xst" -ofn "C:/scr/Exp10_FramMDP/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/scr/Exp10_FramMDP/Multi_SOC.xst" -ofn "C:/scr/Exp10_FramMDP/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/scr/Exp10_FramMDP/Multi_SOC.xst" -ofn "C:/scr/Exp10_FramMDP/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/scr/Exp11_FramOwnMCPU/Multi_SOC.xst" -ofn "C:/scr/Exp11_FramOwnMCPU/Multi_SOC.syr" 
+xst -intstyle ise -ifn "C:/scr/Exp11_FramOwnMCPU/Multi_SOC.xst" -ofn "C:/scr/Exp11_FramOwnMCPU/Multi_SOC.syr" 
+xst -intstyle ise -ifn "C:/scr/Exp11_FramOwnMCPU/Multi_SOC.xst" -ofn "C:/scr/Exp11_FramOwnMCPU/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/scr/Exp12_FramExtMCPU/Multi_SOC.xst" -ofn "C:/scr/Exp12_FramExtMCPU/Multi_SOC.syr" 
+xst -intstyle ise -ifn "C:/scr/Exp12_FramExtMCPU/Multi_SOC.xst" -ofn "C:/scr/Exp12_FramExtMCPU/Multi_SOC.syr" 
+xst -intstyle ise -ifn "C:/scr/Exp12_FramExtMCPU/Multi_SOC.xst" -ofn "C:/scr/Exp12_FramExtMCPU/Multi_SOC.syr" 
+xst -intstyle ise -ifn "C:/scr/Exp12_FramExtMCPU/Multi_SOC.xst" -ofn "C:/scr/Exp12_FramExtMCPU/Multi_SOC.syr" 
+xst -intstyle ise -ifn "C:/scr/Exp12_FramExtMCPU/Multi_SOC.xst" -ofn "C:/scr/Exp12_FramExtMCPU/Multi_SOC.syr" 
+xst -intstyle ise -ifn "C:/scr/Exp12_FramExtMCPU/Multi_SOC.xst" -ofn "C:/scr/Exp12_FramExtMCPU/Multi_SOC.syr" 
+xst -intstyle ise -ifn "C:/scr/Exp12_FramExtMCPU/Multi_SOC.xst" -ofn "C:/scr/Exp12_FramExtMCPU/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+vhdtdtfi -lang verilog -prj Exp09_MultiCPU -o C:/scr/Exp12_FramExtMCPU/Multi_SOC.tfi -lib work C:/scr/Exp12_FramExtMCPU/code//Multi_SOC.v -module Multi_SOC -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+xst -intstyle ise -ifn "C:/scr/Exp12_FramExtMCPU/Multi_SOC.xst" -ofn "C:/scr/Exp12_FramExtMCPU/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/scr/Exp12_FramExtMCPU/Multi_SOC.xst" -ofn "C:/scr/Exp12_FramExtMCPU/Multi_SOC.syr" 
+xst -intstyle ise -ifn "C:/scr/Exp12_FramExtMCPU/Multi_SOC.xst" -ofn "C:/scr/Exp12_FramExtMCPU/Multi_SOC.syr" 
+xst -intstyle ise -ifn "C:/scr/Exp12_FramExtMCPU/Multi_SOC.xst" -ofn "C:/scr/Exp12_FramExtMCPU/Multi_SOC.syr" 
+xst -intstyle ise -ifn "C:/scr/Exp12_FramExtMCPU/Multi_SOC.xst" -ofn "C:/scr/Exp12_FramExtMCPU/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/scr/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/scr/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/scr/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/scr/Exp13_MSOC/Multi_SOC.syr" 
+xst -intstyle ise -ifn "C:/scr/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/scr/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/scr/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/scr/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/scr/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/scr/Exp13_MSOC/Multi_SOC.syr" 
+xst -intstyle ise -ifn "C:/scr/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/scr/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/scr/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/scr/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/Exp13_MSOC/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.syr" 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.syr" 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.syr" 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.syr" 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/3/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/final/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/final/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
+xst -intstyle ise -ifn "C:/Users/wangyue/Desktop/Pro/code/final/Multi_SOC.xst" -ofn "C:/Users/wangyue/Desktop/Pro/code/final/Multi_SOC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/MCPU.ucf -p xc7k160t-fbg676-2L Multi_SOC.ngc Multi_SOC.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multi_SOC_map.ncd Multi_SOC.ngd Multi_SOC.pcf 
+par -w -intstyle ise -ol high -mt off Multi_SOC_map.ncd Multi_SOC.ncd Multi_SOC.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multi_SOC.twx Multi_SOC.ncd -o Multi_SOC.twr Multi_SOC.pcf 
+bitgen -intstyle ise -f Multi_SOC.ut Multi_SOC.ncd 
